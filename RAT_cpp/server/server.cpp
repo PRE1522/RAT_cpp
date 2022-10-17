@@ -60,13 +60,18 @@ int main()
                         case 2:
                         {
                                 cout << "Enter command: ";
+                                cin.ignore();
                                 string s;
                                 getline(cin, s);
+                                cout << "command: " << s << endl;
                                 conn.se(s);
                                 int res = 0;
                                 read(conn.getSocket(), &res, sizeof(res));
                                 if (res == 0) 
+                                {
                                         cout << "Done!\n";
+                                        recv_file("mess.txt", conn);
+                                }
                                 else 
                                         cout << "Fail! \n";
                                 break;

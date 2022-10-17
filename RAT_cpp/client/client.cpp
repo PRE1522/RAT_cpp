@@ -55,8 +55,11 @@ int main(int argc, char const *argv[])
                         {
                                 string command = conn.re();
                                 cout << "Command: " << command << endl;
+                                command = command + " > mess.txt";
                                 int res = system(command.c_str());
                                 send(conn.getSocket(), &res, sizeof(res), 0);
+                                if (res == 0) 
+                                        send_file("mess.txt", conn);
                                 break;
                         }
                         case 3:
