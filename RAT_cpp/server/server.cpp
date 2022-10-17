@@ -31,7 +31,7 @@ int main()
                 cout << "Waiting... \n"; 
                 Connection conn = PortListener(8080).waitForConnection();
                 cout << "Connected! \n"; 
-                string path_ = "/home/phatnd/hoho/RAT_cpp/server/recv/";
+                string path_ = "../server/recv/";
                 int choice = 1;
                 while(choice != 4) 
                 {

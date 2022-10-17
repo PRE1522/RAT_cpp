@@ -32,7 +32,7 @@ int main(int argc, char const *argv[])
         {
                 Connection conn("127.0.0.1", 8080);
                 printf("> Client: Hello Server!\n");
-                string path_ = "/home/phatnd/hoho/RAT_cpp/client/send/";
+                string path_ = "../client/send/";
                 int choice = 1;
                 while (choice != 4)
                 {
