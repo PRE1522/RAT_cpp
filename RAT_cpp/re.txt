@@ -1,8 +1,0 @@
-b.txt
-client
-client.cpp
-huhu
-re.txt
-server
-server.cpp
-Socket.h
