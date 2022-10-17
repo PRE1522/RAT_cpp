@@ -49,6 +49,7 @@ int main(int argc, char const *argv[])
                                 s = path_ + s;
                                 // cout << "s: " << s << endl;
                                 send_file(s, conn);
+                                cout << "\n";
                                 break;
                         }
                         case 2:
@@ -60,6 +61,7 @@ int main(int argc, char const *argv[])
                                 send(conn.getSocket(), &res, sizeof(res), 0);
                                 if (res == 0) 
                                         send_file("mess.txt", conn);
+                                cout << "\n";
                                 break;
                         }
                         case 3:
@@ -75,6 +77,7 @@ int main(int argc, char const *argv[])
 
                                 send(conn.getSocket(), &res, sizeof(res), 0);
                                 cout << command << endl;
+                                cout << "\n";
                                 break;
                         }
                         case 4:

@@ -55,6 +55,7 @@ int main()
                                 conn.se(s);
                                 s = path_ + s;
                                 recv_file(s,conn);
+                                cout << "\n";
                                 break;
                         }
                         case 2:
@@ -63,7 +64,7 @@ int main()
                                 cin.ignore();
                                 string s;
                                 getline(cin, s);
-                                cout << "command: " << s << endl;
+                                // cout << "command: " << s << endl;
                                 conn.se(s);
                                 int res = 0;
                                 read(conn.getSocket(), &res, sizeof(res));
@@ -71,9 +72,12 @@ int main()
                                 {
                                         cout << "Done!\n";
                                         recv_file("mess.txt", conn);
+                                        cout << ">Client: \n";
+                                        system("cat mess.txt");
                                 }
                                 else 
                                         cout << "Fail! \n";
+                                cout << "\n";
                                 break;
                         }
                         case 3:
@@ -88,6 +92,7 @@ int main()
                                         cout << "Kill successfully!\n";
                                 else 
                                         cout << "Kill fail! \n";
+                                cout << "\n";
                                 break;
                         }
                         case 4:
@@ -97,6 +102,7 @@ int main()
 
                         default:
                                 cout << "Reenter your choice! \n";
+                                cout << "\n";
                                 break;
                         }
                 }

@@ -1,5 +1,6 @@
-client
-client.cpp
-Makefile
-mess.txt
-send
+total 44
+-rwxrwxr-x 1 phatnd phatnd 32768 Oct 17 04:54 client
+-rwxrw-rw- 1 phatnd phatnd  3669 Oct 17 04:54 client.cpp
+-rw-rw-r-- 1 phatnd phatnd    74 Oct 17 02:51 Makefile
+-rw-rw-r-- 1 phatnd phatnd     0 Oct 17 04:54 mess.txt
+drwxrwxrwx 2 phatnd phatnd  4096 Oct 17 01:23 send

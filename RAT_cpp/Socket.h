@@ -126,7 +126,7 @@ public:
                 // cout << "size: " << sizeof(filesize) << std::endl;
                 if (!readlong(&filesize))
                         return false;
-                std:: cout << "filesize: " << filesize << std::endl;
+                // std:: cout << "filesize: " << filesize << std::endl;
                 if (filesize > 0)
                 {
                         char buffer[1024] = {0};
