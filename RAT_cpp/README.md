@@ -1,0 +1,4 @@
+- Open 2 terminals
+- cd ../server/ and ../client
+- make run
+- make clean
